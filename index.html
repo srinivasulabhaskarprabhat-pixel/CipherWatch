@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise SOC Console</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="soc.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="soc-header">
+  <div class="header-left">
+    <div class="header-logo">SOC</div>
+    <div>
+      <div class="header-title">Cipher Watch Security Operations Center</div>
+      <div class="header-subtitle">Enterprise SOC Console — Analyze Log Files</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span class="status-text">Systems Nominal</span>
+    </div>
+    <div class="header-clock-wrap">
+      <div class="soc-clock" id="socClock">--:--:--</div>
+      <div class="soc-tz">IST — India Standard Time</div>
+    </div>
+  </div>
+</header>
+
+<!-- ── KPI STRIP ── -->
+<section class="kpi-strip">
+  <div class="kpi-card c-blue">
+    <div class="kpi-label">Total Events</div>
+    <div class="kpi-val" id="kpiTotal">—</div>
+    <div class="kpi-sub">Ingested this session</div>
+  </div>
+  <div class="kpi-card c-red">
+    <div class="kpi-label">Critical</div>
+    <div class="kpi-val" id="kpiCritical">—</div>
+    <div class="kpi-sub">Immediate action required</div>
+  </div>
+  <div class="kpi-card c-orange">
+    <div class="kpi-label">High Severity</div>
+    <div class="kpi-val" id="kpiHigh">—</div>
+    <div class="kpi-sub">Escalation candidates</div>
+  </div>
+  <div class="kpi-card c-cyan">
+    <div class="kpi-label">Risk Score</div>
+    <div class="kpi-val" id="kpiRisk">—</div>
+    <div class="kpi-sub">Weighted threat index</div>
+  </div>
+</section>
+
+<!-- ── MAIN GRID ── -->
+<main class="soc-grid">
+
+  <!-- LEFT: LOG INGESTION -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-accent"></div>
+      <div class="panel-title">Log Ingestion</div>
+    </div>
+    <input type="file" id="file" accept=".log,.txt,.csv">
+    <textarea id="logText" placeholder="Paste raw log data here…"></textarea>
+    <button class="analyze-btn" id="analyzeBtn" onclick="analyze()">▶ &nbsp; Analyze Logs</button>
+
+    <div class="timer-wrap" id="timerWrap">
+      <div class="timer-header">
+        <span class="timer-label">Analysis Timeout</span>
+        <span class="timer-countdown" id="timerCountdown">01:00</span>
+      </div>
+      <div class="timer-track">
+        <div class="timer-fill" id="timerFill"></div>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="panel-header" style="margin-bottom:8px">
+      <div class="panel-accent"></div>
+      <div class="panel-title">Raw AI Output</div>
+    </div>
+    <div class="raw-out" id="result">Awaiting analysis…</div>
+  </div>
+
+  <!-- CENTER: INCIDENT TABLE -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-accent"></div>
+      <div class="panel-title">Incident Table</div>
+      <div class="panel-badge" id="incidentCount">0 events</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Attack Type</th>
+            <th>Severity</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody id="incidentTable">
+          <tr><td colspan="3" class="empty-state">No incidents detected</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- RIGHT: CHARTS -->
+  <div class="charts-panel">
+    <div class="chart-block">
+      <div class="chart-label">Attack Distribution</div>
+      <div class="chart-wrap-donut"><canvas id="attackChart"></canvas></div>
+    </div>
+    <div class="chart-block">
+      <div class="chart-label">Risk Breakdown</div>
+      <div class="chart-wrap-bar"><canvas id="riskChart"></canvas></div>
+    </div>
+  </div>
+
+</main>
+
+<script src="soc.js"></script>
+</body>
+</html>
