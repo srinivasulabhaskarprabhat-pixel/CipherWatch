@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/your-username/Enterprise-SOC-Console/blob/main/cipher.png" width="1000">
+<img src="https://github.com/your-username/Enterprise-SOC-Console/blob/main/cipherwatch.png" width="1000">
 </p>
 
 <h1 align="center">🛡 Enterprise SOC Console</h1>
