@@ -1,368 +1,292 @@
-<p align="center">
-<img src="https://github.com/srinivasulabhaskarprabhat-pixel/CipherWatch/blob/main/cipherwatch.png" width="1000">
-</p>
+<div align="center">
 
-<h1 align="center">🛡 Enterprise SOC Console</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0f3460,100:16213e&height=220&section=header&text=CipherWatch&fontSize=60&fontColor=00d4ff&fontAlignY=40&desc=Enterprise%20SOC%20Console%20%E2%80%94%20AI-Powered%20Security%20Operations%20Center&descAlignY=62&descSize=17&descColor=8b949e&animation=fadeIn"/>
 
-<h3 align="center">
-AI-Powered Security Operations Center (SOC) Dashboard
-</h3>
+<br/>
 
-<p align="center">
-<img src="https://img.shields.io/badge/PHP-Backend-blue">
-<img src="https://img.shields.io/badge/AI-LLaMA%203.1-green">
-<img src="https://img.shields.io/badge/Cybersecurity-SOC-red">
-<img src="https://img.shields.io/badge/Chart.js-Visualization-orange">
-<img src="https://img.shields.io/badge/Project-Completed-brightgreen">
-</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1200&color=00D4FF&center=true&vCenter=true&width=750&lines=🔐+Real-Time+Log+Analysis+%26+Threat+Detection;🤖+AI-Powered+by+LLaMA+3.1+via+OpenRouter;🛡️+SQL+Injection+·+XSS+·+Brute+Force+·+RCE;📊+Live+KPI+Dashboard+with+Chart.js+Visuals)](https://git.io/typing-svg)
 
----
+<br/>
 
-## 🚀 Overview
+<a href="https://cipherwatch.42web.io">
+  <img src="https://img.shields.io/badge/🔗_Live_Demo-cipherwatch.42web.io-00d4ff?style=for-the-badge"/>
+</a>
+&nbsp;
+<img src="https://img.shields.io/badge/PHP-8.x_Backend-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+&nbsp;
+<img src="https://img.shields.io/badge/AI-LLaMA_3.1-00C851?style=for-the-badge"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"/>
 
-Enterprise SOC Console is an AI-powered cybersecurity dashboard designed to analyze, classify, and visualize security logs in real time.
+<br/><br/>
 
-The platform combines traditional rule-based threat detection with modern AI analysis using **LLaMA 3.1 via OpenRouter API**.
+<img src="https://github.com/srinivasulabhaskarprabhat-pixel/CipherWatch/blob/main/cipherwatch.png" width="900"/>
 
-The system provides:
-
-- Real-time log analysis  
-- AI-powered threat classification  
-- Brute-force attack detection  
-- Unknown admin login detection  
-- Interactive SOC dashboard  
-- Live KPI visualization  
-- Threat analytics using Chart.js  
-
-Built using **PHP, JavaScript, HTML/CSS, and Chart.js**, the platform delivers a lightweight SOC environment without requiring databases or heavy frameworks.
+</div>
 
 ---
 
-## ✨ Features
+## ⚡ Overview
 
-✔ AI-Powered Security Log Analysis  
-✔ Real-time SOC Dashboard  
-✔ Brute Force Attack Detection  
-✔ Unknown Admin Login Detection  
-✔ SQL Injection Detection  
-✔ Cross-Site Scripting (XSS) Detection  
-✔ Remote Code Execution (RCE) Detection  
-✔ DNS Tunneling Detection  
-✔ Port Scan Detection  
-✔ High-Entropy Payload Detection  
-✔ Interactive KPI Cards  
-✔ Cyberpunk Responsive UI  
-✔ Chart.js Visualizations  
-✔ Dual-stage AI Detection Pipeline  
-✔ Duplicate Incident Prevention  
+**CipherWatch** is a production-grade, AI-powered SOC (Security Operations Center) dashboard built to analyze, classify, and visualize security logs in real time. It fuses traditional **rule-based heuristic detection** with cutting-edge **LLaMA 3.1 AI analysis** to deliver the intelligence of a professional SOC — with zero databases and zero heavy frameworks.
+
+> *Think less SIEM setup, more instant threat intelligence.*
+
+<table>
+<tr>
+<td>
+
+**🔍 What it detects**
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Remote Code Execution (RCE)
+- Brute Force Attacks
+- DNS Exfiltration & Tunneling
+- Port Scanning
+- Privilege Escalation
+- High-Entropy / Obfuscated Payloads
+- Unknown Admin Logins
+
+</td>
+<td>
+
+**📊 What it delivers**
+- Real-time SOC Dashboard
+- AI-generated Incident Reports
+- Live KPI Metric Cards
+- Attack Distribution Charts
+- Severity-Badged Incident Table
+- Risk Breakdown Visualization
+- Cyberpunk Responsive UI
+- Duplicate Incident Prevention
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🏗 Architecture
+## 🏗️ Architecture
 
-```text
-User Uploads Log File
-          |
-          v
-+----------------------+
-| Frontend Dashboard   |
-| HTML CSS JavaScript  |
-+----------------------+
-          |
-          v
-+----------------------+
-| analyze.php          |
-| Main Processing      |
-+----------------------+
-          |
-          v
-+----------------------+
-| local_scan.php       |
-| Heuristic Detection  |
-+----------------------+
-          |
-          v
-+----------------------+
-| OpenRouter API       |
-| LLaMA 3.1 Analysis   |
-+----------------------+
-          |
-          v
-+----------------------+
-| incident_parser.php  |
-| Structured Parsing   |
-+----------------------+
-          |
-          v
-+----------------------+
-| Dashboard Rendering  |
-| Charts + KPI Cards   |
-+----------------------+
+```
+ ┌─────────────────────────────────────────────────────────────────┐
+ │                         USER INTERFACE                          │
+ │              Upload or paste raw security log file              │
+ └────────────────────────────┬────────────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────────────┐
+ │                    Frontend Dashboard                            │
+ │                  HTML5 · CSS3 · JavaScript                      │
+ └────────────────────────────┬────────────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────────────┐
+ │                      analyze.php                                 │
+ │                    Main Processing Core                          │
+ └──────────────┬──────────────────────────┬───────────────────────┘
+                │                          │
+                ▼                          ▼
+ ┌──────────────────────┐      ┌──────────────────────────────────┐
+ │   local_scan.php     │      │        OpenRouter API            │
+ │  Heuristic Engine    │      │      LLaMA 3.1 AI Analysis       │
+ │  O(n) · Zero latency │      │   Deep semantic classification   │
+ └──────────────────────┘      └──────────────┬───────────────────┘
+                                              │
+                                              ▼
+                              ┌──────────────────────────────────┐
+                              │       incident_parser.php        │
+                              │     Structured Report Parsing    │
+                              └──────────────┬───────────────────┘
+                                             │
+                                             ▼
+                              ┌──────────────────────────────────┐
+                              │      Dashboard Rendering         │
+                              │    Charts · KPI Cards · Tables   │
+                              └──────────────────────────────────┘
 ```
 
 ---
 
-## 🛠 Tech Stack
+## 🧠 Key Detection Algorithms
 
-### Frontend
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Chart.js
+### 🔴 Brute Force Detection
+```text
+Rule: 3+ failed login attempts from the same IP  →  ALERT
+Benefit: Minimizes false positives. Precision over noise.
+```
 
-### Backend
-- PHP 8.x
-- cURL
+### 🟠 Unknown Admin Login Detection
+```text
+Rule: Successful admin login from untrusted external IP  →  FLAG
+Benefit: Catches insider threats and credential compromise.
+```
 
-### AI & APIs
-- OpenRouter API
-- LLaMA 3.1 8B
+### 🟡 High-Entropy Payload Detection
+```text
+Algorithm: Shannon Entropy Analysis
+Detects: Base64 injections · Obfuscated malware · Encoded payloads
+```
 
-### Deployment
-- XAMPP
-- WAMP
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Layer | Technology |
+|:---:|:---|
+| 🎨 **Frontend** | HTML5 · CSS3 · Vanilla JavaScript · Chart.js |
+| ⚙️ **Backend** | PHP 8.x · cURL |
+| 🤖 **AI Engine** | OpenRouter API · LLaMA 3.1 8B |
+| 🚀 **Deployment** | XAMPP · WAMP · localhost |
+
+</div>
 
 ---
 
 ## 📂 Project Structure
 
 ```bash
-Enterprise-SOC-Console/
+CipherWatch/
 │
-├── index.html
-├── soc.css
-├── soc.js
-├── analyze.php
-├── cors.php
-├── helpers.php
-├── fallback_classifier.php
-├── local_scan.php
-├── ai_request.php
-├── incident_parser.php
+├── 📄 index.html               # SOC Dashboard UI
+├── 🎨 soc.css                  # Cyberpunk styling
+├── ⚙️  soc.js                   # Frontend logic & Chart.js
 │
-└── README.md
+├── 🔧 analyze.php              # Main processing engine
+├── 🤖 ai_request.php           # OpenRouter / LLaMA integration
+├── 🔍 local_scan.php           # Heuristic detection rules
+├── 📋 incident_parser.php      # AI response structured parser
+├── 🛡️  fallback_classifier.php  # Offline fallback detection
+├── 🔗 cors.php                 # CORS policy handler
+├── 🧰 helpers.php              # Utility functions
+│
+└── 📖 README.md
 ```
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Installation & Setup
 
-### Step 1
-User uploads or pastes logs into the dashboard.
-
-### Step 2
-Logs are scanned locally using heuristic detection rules.
-
-### Step 3
-Suspicious patterns are sent to LLaMA 3.1 through OpenRouter API.
-
-### Step 4
-AI classifies attacks and generates incident reports.
-
-### Step 5
-Parsed incidents are visualized in the SOC dashboard.
-
----
-
-## 🔍 Detection Capabilities
-
-- SQL Injection
-- Cross-Site Scripting (XSS)
-- Remote Code Execution
-- Brute Force Attacks
-- DNS Exfiltration
-- Port Scanning
-- Privilege Escalation
-- Suspicious Process Execution
-- Unknown/Anomalous Activity
-
----
-
-## 🧠 Key Algorithms
-
-### 🔹 Brute Force Detection
-Triggers only when:
-
-```text
-3 or more failed login attempts from same IP
-```
-
-This minimizes false positives.
-
----
-
-### 🔹 Unknown Admin Login Detection
-Flags successful administrator logins from untrusted external IP ranges.
-
----
-
-### 🔹 High Entropy Detection
-Uses Shannon Entropy analysis to detect:
-
-- Encoded payloads
-- Obfuscated malware
-- Base64 injections
-
----
-
-## 🔧 Installation
-
-Clone repository:
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Enterprise-SOC-Console.git
-cd Enterprise-SOC-Console
+git clone https://github.com/srinivasulabhaskarprabhat-pixel/CipherWatch.git
+cd CipherWatch
 ```
 
----
+### 2️⃣ Configure Your API Key
 
-## Configure OpenRouter API Key
-
-Update:
+Open `ai_request.php` and replace the placeholder:
 
 ```php
-$API_KEY = "YOUR_API_KEY";
+$API_KEY = "YOUR_OPENROUTER_API_KEY";
 ```
 
-inside:
+### 3️⃣ Deploy Locally
 
 ```bash
-ai_request.php
+# XAMPP → place in:
+htdocs/CipherWatch/
+
+# WAMP → place in:
+www/CipherWatch/
+```
+
+### 4️⃣ Launch
+
+```
+http://localhost/CipherWatch/
 ```
 
 ---
 
-## ▶ Run Project
+## 📊 Performance Benchmarks
 
-Move project into:
+<div align="center">
 
-### XAMPP
-```bash
-htdocs/
-```
+| Log Volume | Heuristic Scan | AI Analysis | Total Time |
+|:---:|:---:|:---:|:---:|
+| 50 lines | < 1s | 6–12s | **~10s** |
+| 500+ lines | < 1s | 20–35s | **~30s** |
 
-### WAMP
-```bash
-www/
-```
+*Local scan complexity: **O(n)** — scales linearly with log size*
 
-Then open:
-
-```bash
-http://localhost/Enterprise-SOC-Console/
-```
+</div>
 
 ---
 
-## 📊 Dashboard Components
+## ✅ Test Results
 
-Features include:
+<div align="center">
 
-- KPI Metric Cards
-- Incident Table
-- Severity Badges
-- Attack Distribution Chart
-- Risk Breakdown Chart
-- Analysis Timer
-- Responsive Layout
-
----
-
-## 🛡 Security Features
-
-✔ XSS-safe rendering  
-✔ API key protection  
-✔ Input validation  
-✔ Request timeout handling  
-✔ Markdown sanitization  
-✔ CORS handling  
-
----
-
-## 📈 Performance
-
-| Log Size | Average Analysis Time |
-|---|---|
-| 50 lines | 6–12 seconds |
-| 500+ lines | 20–35 seconds |
-
-Local scanning operates in:
-
-```text
-O(n)
-```
-
-time complexity.
-
----
-
-## ✅ Test Cases
-
-| Test Case | Status |
-|---|---|
+| Test Case | Result |
+|:---|:---:|
 | SQL Injection Detection | ✅ PASS |
 | XSS Detection | ✅ PASS |
 | Brute Force Detection | ✅ PASS |
 | Unknown Admin Login | ✅ PASS |
-| RCE Detection | ✅ PASS |
-| Duplicate Prevention | ✅ PASS |
+| Remote Code Execution | ✅ PASS |
+| Duplicate Incident Prevention | ✅ PASS |
 | Mobile Responsiveness | ✅ PASS |
-| Markdown Parsing | ✅ PASS |
+| Markdown Sanitization | ✅ PASS |
+
+</div>
 
 ---
 
-## 🔮 Future Enhancements
+## 🛡️ Security Hardening
 
-- Database Integration  
-- JWT Authentication  
-- Real-time Log Streaming  
-- SIEM Integration  
-- PDF Report Export  
-- Email/SMS Alerts  
-- GeoIP Enrichment  
-- Multi-log Correlation  
-- Self-hosted AI Models  
+```
+✔  XSS-safe rendering          ✔  Input validation & sanitization
+✔  API key protection          ✔  CORS policy enforcement
+✔  Request timeout handling    ✔  Markdown injection prevention
+```
 
 ---
 
-## 📚 Learning Outcomes
+## 🔮 Roadmap
 
-This project helped in gaining experience with:
-
-- Cybersecurity Log Analysis
-- AI-powered Threat Detection
-- PHP Backend Development
-- Security Operations Center Design
-- API Integration
-- Threat Visualization
-- Detection Engineering
-- Web Security
+- [ ] 🗄️ Database Integration (MySQL / PostgreSQL)
+- [ ] 🔑 JWT Authentication & Role-based Access
+- [ ] 📡 Real-time Log Streaming (WebSockets)
+- [ ] 🔗 SIEM Platform Integration
+- [ ] 📄 PDF Incident Report Export
+- [ ] 📧 Email & SMS Alerting
+- [ ] 🌍 GeoIP Threat Enrichment
+- [ ] 🔄 Multi-log Correlation Engine
+- [ ] 🤖 Self-hosted AI Model Support
 
 ---
 
 ## 👨‍💻 Author
 
+<div align="center">
+
 **Bhaskara Prabhat Srinivasula**
+*Cybersecurity Analyst · SOC Engineer · Cloud Security*
 
-🌐 Portfolio:  
-https://bhaskar.42web.io/
+<br/>
 
-GitHub:  
-https://github.com/BhaskarPrabhat
+<a href="https://bhaskar.42web.io"><img src="https://img.shields.io/badge/🌐_Portfolio-bhaskar.42web.io-0A66C2?style=for-the-badge"/></a>
+&nbsp;
+<a href="https://linkedin.com/in/bhaskara-prabhat-srinivasula-96b7a32b6"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+&nbsp;
+<a href="https://github.com/srinivasulabhaskarprabhat-pixel"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-LinkedIn:  
-https://www.linkedin.com/in/bhaskara-prabhat-srinivasula-96b7a32b6
-
----
-
-## ⭐ Support
-
-If you like this project:
-
-Give it a ⭐ on GitHub
+</div>
 
 ---
 
-<h2 align="center">
-🛡 Intelligent Security Monitoring Powered By AI
-</h2>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:0f3460,100:0d1117&height=130&section=footer&text=Intelligent+Security+Monitoring+Powered+By+AI&fontSize=16&fontColor=00d4ff&fontAlignY=65"/>
+
+<br/>
+
+*If this project helped you, drop a ⭐ — it means the world.*
+
+![Profile Views](https://komarev.com/ghpvc/?username=srinivasulabhaskarprabhat-pixel&style=for-the-badge&color=00d4ff&label=PROJECT+VIEWS)
+
+</div>
