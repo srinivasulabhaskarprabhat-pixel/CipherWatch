@@ -20,7 +20,7 @@
 
 <br/><br/>
 
-<img src="https://github.com/srinivasulabhaskarprabhat-pixel/CipherWatch/blob/main/cipherwatch.png" width="900"/>
+<img src="https://github.com/srinivasulabhaskarprabhat-pixel/CipherWatch/blob/main/cipher.png" width="900"/>
 
 </div>
 
